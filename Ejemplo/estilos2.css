@@ -1,0 +1,42 @@
+*{ /**Este selector va a aplicar un estilo a todo el docuemnto*/
+    background-color: #0C7699;
+}
+
+header{
+    /*color: aqua;*/
+    /*color: rgb(7, 153, 182); Maneras en las que se pueden poner colores*/
+    /*color: hsl(0, 68%, 65%);*/
+    /*color: hsla(0, 68%, 65%, .5);*/
+    color: rgba(240 , 231, 231, .9);
+    border: solid black 2px; /*Se puede hacer por atributos o generalmente*/
+    text-align: center;
+}
+#banner{
+    font: 2em sans-serif;
+}
+#contenido{
+    width: 80%;
+    display: inline-block;
+}
+#Principal{
+    width: 95%;
+    display: inline-block;
+}
+
+#menuHori{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: azure;
+}
+
+#menuHori li{ /*Asi se le aplica a la lista dentro de el id menuHori*/ 
+    display: inline ;
+}
+#menuVert{
+    width: 10%;
+    display: inline-block;
+}
+#aside{
+    display: inline-block;
+    width: 8%;
+}

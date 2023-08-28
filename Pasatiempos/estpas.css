@@ -5,6 +5,10 @@
     text-align: center;
     width: 95%;
 }
+/*#barra{
+    position: sticky;
+    top: 0;
+}*/
 #banner{
     position: relative;
     display: inline-block;
@@ -34,3 +38,29 @@
     text-decoration: none;
     color: black;
 }
+#container{
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+}
+#aside{
+    width: 25%;
+    display: inline-block;
+}
+#i2{
+    margin-left: 30px;
+}
+#i4{
+    margin-left: 30px;
+}
+.img1{
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+    border: 100px;
+}
+.img2{
+    text-align: center;
+    margin: 10px;
+}
+

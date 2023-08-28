@@ -1,0 +1,36 @@
+/**{
+    background-color: #009c97;
+}*/
+#principal{
+    text-align: center;
+    width: 95%;
+}
+#banner{
+    position: relative;
+    display: inline-block;
+}
+#titulo{
+    color:black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-shadow: 1px 1px white, 2px 2px red;
+}
+#imagen{
+    padding: 5px;
+    border: 3px;
+}
+#navegacion{
+    text-align: center;
+}
+#navegacion li{
+    display: inline;
+    padding: 5px;
+    margin: 2px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}

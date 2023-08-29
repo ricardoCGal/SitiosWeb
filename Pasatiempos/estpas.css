@@ -47,6 +47,7 @@
 .card1{
     display: inline-block;
     width: 30%;
+    height: 380px;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
@@ -60,11 +61,12 @@
 }
 .card1 img{
     width: 100%;
-    height: 200px;
+    height: 210px;
 }
 .card2{
     display: inline-block;
     width: 30%;
+    height: 380px;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
@@ -84,5 +86,15 @@
     width: 25%;
     display: inline-block;
 }
-
+h2{
+    text-align: center;
+}
+#container2{
+    text-align: justify;
+    width: 70%;
+    display: inline-block;
+}
+#container2 li{
+    text-align: left;
+}
 

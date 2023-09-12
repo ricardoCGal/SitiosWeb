@@ -5,11 +5,11 @@
     text-align: center;
     width: 95%;
 }
-/*#barra{
+#barra{
     position: sticky;
     top: 0;
     background-color: #fff;
-}*/
+}
 #banner{
     position: relative;
     display: inline-block;
@@ -106,4 +106,9 @@ h2{
     width: 50%;
     height: 300px;
 }
-
+#pie{
+    text-align: center;
+    width: 95%;
+    bottom: 0;
+    position: relative;
+}

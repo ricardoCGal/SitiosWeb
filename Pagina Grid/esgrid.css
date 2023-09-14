@@ -1,0 +1,141 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: .5fr .1fr 3fr .3fr;
+    grid-template-areas: "Banner Banner Banner Banner"
+                         "Nav Nav Nav Nav"
+                         "Aside Contenido Contenido Contenido"
+                         "Aside Contenido Contenido Contenido"
+                         "Aside Contenido Contenido Contenido"
+                         "Footer Footer Footer Footer";
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom , #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                         
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.elem-1{
+    grid-area: Banner;
+    color: black;
+    text-align: center;
+    font-size: 1.5vw;
+    /*position: sticky;
+    top: 0;*/
+    text-shadow: 1px 1px white, 2px 2px red;
+    position: relative;
+}
+#titulo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.elem-1 img{
+    margin: 8px;
+}
+.elem-2{
+    grid-area: Nav;
+    text-align: center;
+    font-size: 1.3vw;
+    /*position: sticky;
+    top: 202.09px;*/
+    color: white;
+}
+#navegacion{
+    text-align: center;
+}
+#navegacion li{
+    display: inline;
+    padding: 5px;
+    margin: 2px;
+}
+#navegacion a{
+    color: white;
+}
+.elem-3{
+    grid-area: Aside;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    width: auto;
+
+}
+.elem-4{
+    grid-area: Contenido;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+
+}
+.elem-5{
+    grid-area: Footer;
+    color: white ;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.elem-3 header{
+    text-align: center;
+}
+.elem-3 ul{
+    text-align: left;
+}
+.card1{
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #4197E8;
+    box-shadow: opx 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    color: black;
+}
+.card1:hover{
+    box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+}
+.card1 img{
+    width: 100%;
+    height: 210px;
+}
+.card2{
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #4197E8;
+    box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    color: black;
+}
+.card2:hover{
+    box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+}
+.card2 img{
+    width: 100%;
+    height: 200px;
+}
+.elem-4 li{
+    text-align: left;
+}
+#cont img{
+    width: 350px;
+    height: auto;
+}
+#cont2 img{
+    width: 350px;
+    height: auto;
+}
+button{
+    background-color: #4197E8;
+}
+#red{
+    border-radius: 60%;
+}

@@ -1,5 +1,9 @@
+*{
+    font-size: 1.4vw; 
+}
 .contenedor-grid{
     display: grid;
+    grid-template-columns: 15% 80%;
     grid-template-rows: .5fr .1fr 3fr .3fr;
     grid-template-areas: "Banner Banner Banner Banner"
                          "Nav Nav Nav Nav"
@@ -24,13 +28,17 @@
     /*position: sticky;
     top: 0;*/
     text-shadow: 1px 1px white, 2px 2px red;
-    position: relative;
+    position: relative; 
+}
+.elem-4 p, .elem-4 li{
+    font-size: 1.5vw;
 }
 #titulo{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 3vw;
 }
 .elem-1 img{
     margin: 8px;
@@ -69,13 +77,22 @@
     font-size: 1vw;
 
 }
+.elem-4 h2{
+    font-size: 1.5vw;
+}
+.elem-4 p{
+    text-align: justify;
+    padding: 20px;
+}
 .elem-5{
     grid-area: Footer;
     color: white ;
     text-align: center;
     font-size: 1vw;
 }
-
+.elem-3 li, h2{
+    font-size: 1vw;
+}
 .elem-3 header{
     text-align: center;
 }
@@ -85,7 +102,7 @@
 .card1{
     display: inline-block;
     width: 30%;
-    height: 300px;
+    height: 440px;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
@@ -100,12 +117,12 @@
 }
 .card1 img{
     width: 100%;
-    height: 210px;
+    height: 250px;
 }
 .card2{
     display: inline-block;
     width: 30%;
-    height: 300px;
+    height: 350px;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
@@ -120,7 +137,7 @@
 }
 .card2 img{
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 .elem-4 li{
     text-align: left;
@@ -139,7 +156,229 @@ button{
 #red{
     border-radius: 60%;
 }
-#refe{
+#refe, li{
     text-align: left;
-    font-size: x-small;
+    font-size: .8vw;
+}
+
+@media only screen and (max-width: 1080px){
+    *{
+        font-size: 2vw;
+    }
+    .contenedor-grid{
+        display: grid;
+        grid-template-rows: .5fr .1fr 3fr .3fr;
+        grid-template-areas: "Banner Banner Banner Banner"
+                             "Nav Nav Nav Nav"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Aside Aside Aside Aside"
+                             "Footer Footer Footer Footer";
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom , #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                             
+    }
+    #titulo{
+        font-size: 3.8vw;
+    }
+    .card1{
+        display: inline-block;
+        width: 40%;
+        height: 600px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #4197E8;
+        box-shadow: opx 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        color: black;
+    }
+    .card1:hover{
+        box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+    }
+    .card1 img{
+        width: 100%;
+        height: 10%;
+    }
+    .card2{
+        display: inline-block;
+        width: 40%;
+        height: 430px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #4197E8;
+        box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        color: black;
+    }
+    .card2:hover{
+        box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+    }
+    .card2 img{
+        width: 80%;
+        height: 10%;
+    }
+    .elem-4 li{
+        text-align: left;
+    }
+    #cont img{
+        width: 350px;
+        height: auto;
+    }
+    #cont2 img{
+        width: 350px;
+        height: auto;
+    }
+    .elem-3{
+        grid-area: Aside;
+        color: white;
+        text-align: right;
+    }
+    .elem-3 h2{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    .elem-3 li{
+        text-align: left;
+        font-size: 1.4vw;
+    }
+    .elem-4 p{
+        text-align: justify;
+        padding: 10px;
+    }
+    .elem-4 li, .elem-4 p, .elem-4{
+        font-size: 2vw;
+    }
+    button{
+        background-color: #4197E8;
+    }
+    #red{
+        border-radius: 60%;
+    }
+    .elem-5{
+        grid-area: Footer;
+        color: white ;
+        text-align: center;
+        font-size: 2vw;
+    }
+    #refe{
+        font-size: 1.5vw;
+    }
+    #refe li{
+        font-size: 1.5vw;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        font-size: 3vw;
+    }
+    .contenedor-grid{
+        display: grid;
+        grid-template-rows: .5fr .1fr 3fr .3fr;
+        grid-template-areas: "Banner Banner Banner Banner"
+                             "Nav Nav Nav Nav"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Footer Footer Footer Footer";
+        background: #000428;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom , #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                             
+    }
+    #titulo{
+        font-size: 4vw;
+    }
+    #imagen{
+        width: 200px;
+    }
+    .elem-3{
+        display: none;
+    }
+    .card1{
+        display: inline-block;
+        width: 36%;
+        height: 215px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #4197E8;
+        box-shadow: opx 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        color: black;
+
+    }
+    .card1:hover{
+        box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+    }
+    .card1 img{
+        width: 40px;
+        height: 50px;
+        
+    }
+    .card2{
+        display: inline-block;
+        width: 36%;
+        height: 140px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #4197E8;
+        box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        color: black;
+    }
+    .card2:hover{
+        box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+    }
+    .card2 img{
+        width: 45px;
+        height: 50px;
+    }
+    .elem-4 li{
+        text-align: left;
+    }
+    #cont img{
+        width: 350px;
+        height: auto;
+    }
+    #cont2 img{
+        width: 350px;
+        height: auto;
+    }
+    #cont img{
+        width: 150px;
+    }
+    #cont2 img{
+        width: 100px;
+    }
+    .elem-4 iframe{
+        width: 90%;
+        height: 158px;
+    }
+    .elem-4 li, .elem-4 p, .elem-4 h2{
+        font-size: 3.1vw;
+    }
+    .elem-5{
+        grid-area: Footer;
+        color: white ;
+        text-align: center;
+        font-size: 2vw;
+    }
+    #refe{
+        font-size: 1.5vw;
+    }
+    #refe li{
+        font-size: 1.5vw;
+        text-align: left;
+    }
 }

@@ -264,13 +264,13 @@ button{
         grid-area: Footer;
         color: white ;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.3vw;
     }
     #refe{
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     #refe li{
-        font-size: 1.5vw;
+        font-size: 1vw;
         text-align: left;
     }
 }
@@ -372,13 +372,13 @@ button{
         grid-area: Footer;
         color: white ;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     #refe{
-        font-size: 1.5vw;
+        font-size: 1.3vw;
     }
     #refe li{
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         text-align: left;
     }
 }

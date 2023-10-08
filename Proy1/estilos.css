@@ -1,0 +1,231 @@
+*{
+font-size: 3vw;
+
+}
+.contenedor-grid{
+        display: grid;
+        grid-template-columns: 15% 80%;
+        grid-template-rows: .2fr .1fr 3fr .3fr;
+        grid-template-areas: "Banner Banner Banner Banner"
+                             "Nav Nav Nav Nav"
+                             "Aside Contenido Contenido Contenido"
+                             "Aside Contenido Contenido Contenido"
+                             "Aside Contenido Contenido Contenido"
+                             "Footer Footer Footer Footer";
+        background: #8E0E00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                                                         
+}
+/*----------------------------BANNER----------------------------------------*/
+.class-elem1{
+    grid-area: Banner;
+    display: inline-flex;
+    width: 95%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+#bann1{
+    text-align: left;
+    width: 10vw;
+}
+
+#bann2{
+    text-align: left;
+    width: 10vw;
+}
+#titulo{
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    text-shadow: 3px 3px red, 4px 4px black;
+}
+
+/*---------------------------NAV------------------------------------------*/
+.class-elem2{
+    grid-area: Nav;
+}
+.nav{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav li{
+    display: inline;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.class-elem2 a{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color:honeydew;
+}
+
+/*-------------------------------ASIDE--------------------------------------*/
+.class-elem3{
+    grid-area: Aside;
+    font-size: 1.5vw;
+    text-align: justify;
+    color: whitesmoke;
+    padding: 20px;
+}
+li img{
+    text-align: center;
+    width: 8vw;
+}
+
+/*---------------------------------CONT------------------------------------*/
+.class-elem4{
+    grid-area: Contenido;
+    font-size: 1.8vw;
+    text-align: center;
+    color: whitesmoke;
+    padding: 30px;
+}
+.class-elem4 a{
+    text-decoration: none;
+}
+.card1{
+    display: inline-block;
+    width: 20%;
+    height: 43vw;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(170, 57, 100, 0.466);
+    box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    color: rgb(190, 195, 211);
+}
+.card1 p, h2{
+    font-size: 1.1vw;
+    text-align: justify;
+    padding: 10px;
+}
+.card1 h2{
+    text-align: center;
+    color: whitesmoke;
+}
+.card1:hover{
+    box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+}
+.card1 img{
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.card2{
+    display: inline-block;
+    width: 20%;
+    height: 43vw;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(170, 57, 100, 0.466);
+    box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    color: rgb(190, 195, 211);
+}
+.card2 p, h2{
+    font-size: 1.1vw;
+    text-align: justify;
+    padding: 10px;
+}
+.card2 h2{
+    text-align: center;
+    color: whitesmoke;
+}
+.card2:hover{
+    box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+}
+.card2 img{
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.card3{
+    display: inline-block;
+    width: 20%;
+    height: 43vw;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(170, 57, 100, 0.466);
+    box-shadow: opx 1px 10px rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    color: rgb(190, 195, 211);
+}
+.card3 p, h2{
+    font-size: 1.1vw;
+    text-align: justify;
+    padding: 10px;
+}
+.card3 h2{
+    text-align: center;
+    color: whitesmoke;
+}
+.card3:hover{
+    box-shadow: 5px 5px 20px rgba(135,206,250,1.000);
+}
+.card3 img{
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+/*----------------------------------FOOTER-----------------------------------*/
+.class-elem5{
+    grid-area: Footer;
+}
+.class-elem5 p,a{
+    font-size: 1.2vw;
+    color: rgb(190, 195, 211);
+    text-align: center;
+}
+/*-------------------------------------POST´S--------------------------------------*/
+.container{
+    font-size: 3vw;
+    color: whitesmoke;
+}
+.title{
+    text-align: center;
+    font-size: 3vw;
+    font-family:--apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Oxygen, Ubuntu, Cantarell, "open sans", "helvetica neue", sans-serif;
+    margin: 20px;
+    padding:30px;
+}
+.content p{
+    font-size: 1.4vw;
+    padding: 10px;
+    text-align: justify;
+}
+.content img{
+    width: 20vw;  
+    float: left;  
+    padding: 50px;
+}
+.video{
+    text-align: center;
+}
+#saw{
+    width: 10vw;
+}
+/*---------------------------------------------------------------------------*/
+@media only screen and (max-width: 1600px) {
+    
+}
+/*---------------------------------------------------------------------------*/
+@media only screen and (max-width: 1080px) {
+    
+}
+/*---------------------------------------------------------------------------*/
+@media only screen and (max-width: 700px) {
+    
+}

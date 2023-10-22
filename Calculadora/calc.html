@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./calc.js"></script>   
+    <link rel="stylesheet" href="./calc.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="container">
+        <form action="#" style="grid-area: entra;">
+            <input type="text" id="entrada" style="width: 100%;">
+        </form>
+        <div id="linea1">
+        <input type="button" value="7" id="btn7" onclick="agregaNumero(value)">
+        <input type="button" value="8" id="btn8" onclick="agregaNumero(value)">
+        <input type="button" value="9" id="btn9" onclick="agregaNumero(value)">
+        <input type="button" value="+" id="sum" onclick="realizarOperacion('+')">
+        </div>
+        <div id="linea2">
+        <input type="button" value="4" id="btn4" onclick="agregaNumero(value)">
+        <input type="button" value="5" id="btn5" onclick="agregaNumero(value)">
+        <input type="button" value="6" id="btn6" onclick="agregaNumero(value)">
+        <input type="button" value="-" id="res" onclick="realizarOperacion('-')">
+        </div>
+        <div id="linea3">
+            <input type="button" value="1" id="btn1" onclick="agregaNumero(value)">
+            <input type="button" value="2" id="btn2" onclick="agregaNumero(value)">
+            <input type="button" value="3" id="btn3" onclick="agregaNumero(value)">
+            <input type="button" value="*" id="mul" onclick="realizarOperacion('*')">
+        </div>
+        <div id="linea4">
+            <input type="button" value="=" id="btni" onclick="realizarOperacion('=')"> 
+            <input type="button" value="0" id="btn0" onclick="agregaNumero(value)">
+            <input type="button" value="CE" id="btncl" onclick="borrar()">
+            <input type="button" value="/" id="div" onclick="realizarOperacion('/')">
+        </div>
+    </div>
+</body>
+</html>

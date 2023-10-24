@@ -568,14 +568,16 @@ li img{
     align-items: center;
     text-align: center;
 }
-/*#bann1{
+#bann1{
     text-align: left;
+    display: block;
     width: 2vw;
 }
 #bann2{
     text-align: right;
+    display: block;
     width: 2vw;
-}*/
+}
 #titulo{
     text-align: center;
     color: whitesmoke;
